@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 1200px;
+    height: 100vh;
+    background: rgb(135, 224, 253);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(135, 224, 253, 1) 0%, rgba(83, 203, 241, 1) 55%, rgba(5, 171, 224, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(135, 224, 253, 1) 0%, rgba(83, 203, 241, 1) 55%, rgba(5, 171, 224, 1) 100%);
+    background: linear-gradient(to bottom, rgba(135, 224, 253, 1) 0%, rgba(83, 203, 241, 1) 55%, rgba(5, 171, 224, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#87e0fd', endColorstr='#05abe0', GradientType=0);
+
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 1200px;
+    height: 700px;
+    background-color: #EEDDFF;
+    border: 1px solid #EEDDFF;
+    border-radius: 25px;
+    box-shadow: 7px 7px 10px 10px rgba(0, 0, 0, 0.2);
+    
+
+}
+
+
+.container.disable :where(.editor-pannel, .save-img, .reset-filter){
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.main-wrapper {
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+
+}
+
+.controls {
+    padding-left: 20px;
+    padding-top: 10px;
+    height: 130px;
+    display: flex;
+
+}
+
+.filter{
+    width: 300px;
+}
+
+.title {
+    font-size: 20px;
+    padding: 15px 0px 15px 0px;
+    color: #000000;
+}
+
+i {
+    width: 65px;
+    height: 50px;
+    font-size: 24px;
+    padding-top: 12px;
+    background-color: #EEDDFF;
+    opacity: 0.5;
+    
+}
+
+
+.editor-pannel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px 10px 15px 10px;
+  border: 1px solid gray;
+  width: 450px;
+  height: 450px;
+  margin-right: 35px;
+  background-color: #EEDDFF;
+}
+
+.flips{
+    width: 300px;
+    background-color: #EEDDFF;
+}
+
+.filter-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.btn{
+    height: 50px;
+    width: 130px;
+    border-radius: 6px;
+}
+
+.btn-option{
+    margin-top: 15px;
+}
+
+.btn-option:hover{
+    transition: 1s;
+    box-shadow:0 0 0 rgba(0,0,0,0.3) inset;
+}
+
+.active{
+    color: white;
+    background-color: rgba(32,124,202,1);
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 110px;
+    width: 300px;
+
+}
+
+.rotate{
+    display: flex;
+    justify-content: space-between;
+}
+
+ .slider input{
+    min-width: 100%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+
+
+ .preview-img{
+    overflow: hidden;
+    min-width: 750px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-img img{
+    max-width: 750px;
+    max-height: 450px;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.row{
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+h1{
+    padding-left: 15px;
+    color: #000000;
+}
+
+.save-img{
+    color: #fff;
+    background-color: rgba(32,124,202,1);
+}
+
+.choose-img{
+    color:#fff;
+    background-color: gray;
+}

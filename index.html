@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Atomic Main Page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+
+    <div class="container disable">
+        <h1>Easy Image Editor</h1>
+
+        <div class="main-wrapper">
+
+            <div class="editor-pannel">
+                <div class="filter">
+                    <label class="title">Filters</label>
+                    <div class="options">
+                        <button id="brightness" class="btn btn-option active">Brightness</button>
+                        <button id="saturation" class="btn btn-option">Saturation</button>
+                        <button id="inversion" class="btn btn-option">Inversion</button>
+                        <button id="grayscale" class="btn btn-option">Grayscale</button>
+                    </div>
+                    <div class="slider">
+                    <div class="filter-info">
+                        <p class="name">Brightness</p>
+                        <p class="value">100%</p>
+                    </div>
+                    <input class="bar" type="range" value="100" min="0" max="200">
+                </div>
+            </div>
+                <label class="title">Filters</label>
+                <div class="flips">
+                
+                <div class="rotate">
+                    <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                    <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+                    <button id="vertical"><i class="bx bx-reflect-vertical"></i></button>
+                    <button id="horizontal"><i class="bx bx-reflect-horizontal"></i></button>
+                </div>
+            </div>
+            </div>
+            <div class="preview-img"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAMFBMVEXX19f////d3N3U1NTs7Ozh4eHy8vL8/Pz5+fnl5eX09PTv7+/o6Ojf39/39/fZ2dkHyZgVAAACeUlEQVR4nO3ba1eyQBRAYXREA2///9/mNtMB0woX7+Wcvb+KK+aJAaKhadK3/Ns78A+kgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakgQakwZ8waF9u7n2c3aBsFq+2LvPu4vwGby8bbDUIYrCZXByDrkxtFcdg8re3GgQz+P08aKIZnGf27+o0WLQaaBDe4NAtl12f2qA9D6rsExssP8d0TGuwug7pm3NEYINj9WlSg00ZfZjQ4K02OOQ0WNQGTx+0BTaofuTgwnDnEdigv10X1oMhj08OgQ0W3WVMpRsMubSJDE53CIXnCcO7g76MrxKhDU7D2u22o9/6aZvRgRDc4Iuau9uFdAbnM+XwQEhn0F03zmvwsfXgQMhmcLlpKJkNLv+BKPXVIpvB5+b1ZEhmcL1/ridDKoNte/sTopoMeQxOAPUY23QGI4BmMBkyGNwDNIPJEN+g/wKA2jwG/aOB3Z6vRTd4SFBNhuAGjwmaZp/D4BlBU/oMBk8JbgiRDb5de3tBCGzwg+XHHwjh1iM1++7ST0ZU2PAYzmDatzUIZTB5vXIcg341tUMYg9fSQAP6/99n2q5frN/NvIvzv9s3+ZJQr+GfNd/x1IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA00IA0OBm8Ay9XH/ifCf6qAAAAAElFTkSuQmCC"
+                    alt="#" >
+                    
+            </div>
+        </div>
+
+        <div class="controls">
+
+            <button class="btn reset-filter">Reset Filters</button>
+            <div class="row">
+                <input type="file" class="file-input" accept="images/*" hidden>
+                <button class="btn choose-img">Choose Image</button>
+                <button class="btn save-img">Save Image</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
